@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHS Career Guide | Grade 10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <section id="welcomeScreen" class="welcome-screen">
+    <div class="welcome-card">
+      <div class="welcome-icon">🎓</div>
+      <h1>Hello, Student!</h1>
+      <p>
+        Welcome to the SHS Career Guide.
+        Discover different tracks, explore career paths,
+        and find the options that match your interests.
+      </p>
+      <button id="proceedBtn" class="primary-btn">
+        Proceed →
+      </button>
+    </div>
+  </section>
+
+  <!-- Main Website -->
+  <div id="mainApp" class="app hidden">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🎓</div>
+        <div>
+          <h2>SHS Guide</h2>
+          <p>Grade 10 Career Guide</p>
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <p class="nav-label">MAIN MENU</p>
+
+        <button class="nav-link active" data-page="dashboard">
+          <span>⌂</span> Dashboard
+        </button>
+
+        <button class="nav-link" data-page="tracks">
+          <span>▤</span> Tracks &amp; Strands
+        </button>
+
+        <button class="nav-link" data-page="assessment">
+          <span>✓</span> Strand Assessment
+        </button>
+
+        <button class="nav-link" data-page="careers">
+          <span>➜</span> Career Paths
+        </button>
+
+        <button class="nav-link" data-page="about">
+          <span>ⓘ</span> About
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button id="themeBtn" class="theme-btn">
+          🌙 Dark Mode
+        </button>
+        <p>SHS Career Guide © 2026</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <header class="topbar">
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+          ☰
+        </button>
+
+        <div>
+          <p class="topbar-subtitle">GRADE 10 STUDENT PORTAL</p>
+          <h2 id="pageTitle">Dashboard</h2>
+        </div>
+
+        <div class="student-badge">G10</div>
+      </header>
+
+      <!-- Dashboard -->
+      <section class="page active" id="dashboard">
+        <div class="hero">
+          <div class="hero-text">
+            <span class="eyebrow">YOUR FUTURE STARTS HERE</span>
+            <h1>Plan Your Future with Confidence</h1>
+            <p>
+              Explore Senior High School tracks, discover career
+              opportunities, and make an informed decision about
+              your next academic journey.
+            </p>
+            <button class="primary-btn" data-go="tracks">
+              Explore SHS Tracks →
+            </button>
+          </div>
+
+          <div class="hero-art">🚀</div>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <h2>Explore the Website</h2>
+            <p>Choose a section to start learning.</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon blue">📚</div>
+            <h3>Tracks &amp; Strands</h3>
+            <p>
+              Learn about the available SHS tracks and their
+              learning opportunities.
+            </p>
+            <button class="text-btn" data-go="tracks">
+              Learn More →
+            </button>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon purple">📝</div>
+            <h3>Strand Assessment</h3>
+            <p>
+              Answer a short interest quiz to explore options
+              that may suit you.
+            </p>
+            <button class="text-btn" data-go="assessment">
+              Start Assessment →
+            </button>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon green">💼</div>
+            <h3>Career Paths</h3>
+            <p>
+              Discover possible careers related to different
+              areas of study.
+            </p>
+            <button class="text-btn" data-go="careers">
+              Explore Careers →
+            </button>
+          </article>
+        </div>
+
+        <div class="info-banner">
+          <div class="info-symbol">💡</div>
+          <div>
+            <h3>Remember</h3>
+            <p>
+              Choose a track based on your interests, strengths,
+              goals, and the opportunities available at your
+              preferred school. Ask a guidance counselor for help
+              when needed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tracks and Strands -->
+      <section class="page" id="tracks">
+        <div class="page-intro">
+          <span class="eyebrow">KNOW YOUR OPTIONS</span>
+          <h1>SHS Tracks &amp; Strands</h1>
+          <p>
+            Explore different learning pathways before choosing
+            your Senior High School program.
+          </p>
+        </div>
+
+        <div class="notice">
+          <strong>Note:</strong> SHS program offerings and strand
+          arrangements may vary by school and school year.
+          Confirm the available options with your preferred school.
+        </div>
+
+        <div class="track-grid">
+
+          <article class="track-card">
+            <div class="track-top academic">
+              <span class="track-emoji">📖</span>
+              <span class="track-tag">ACADEMIC</span>
+            </div>
+            <div class="track-body">
+              <h2>Academic Pathway</h2>
+              <p>
+                Suitable for learners interested in further
+                studies, specialized subjects, and academic
+                preparation for college.
+              </p>
+              <div class="strand-list">
+                <span>STEM</span>
+                <span>ABM</span>
+                <span>HUMSS</span>
+                <span>GAS</span>
+              </div>
+              <button class="outline-btn"
+                data-details="academic">
+                View Details
+              </button>
+            </div>
+          </article>
+
+          <article class="track-card">
+            <div class="track-top tech">
+              <span class="track-emoji">🛠️</span>
+              <span class="track-tag">TECHNICAL-VOCATIONAL</span>
+            </div>
+            <div class="track-body">
+              <h2>Technical-Vocational Pathway</h2>
+              <p>
+                Focuses on practical and technical skills that
+                can support employment, competency certification,
+                or further education.
+              </p>
+              <div class="strand-list">
+                <span>ICT</span>
+                <span>Electrical</span>
+                <span>Automotive</span>
+                <span>Cookery</span>
+              </div>
+              <button class="outline-btn"
+                data-details="tech">
+                View Details
+              </button>
+            </div>
+          </article>
+
+          <article class="track-card">
+            <div class="track-top arts">
+              <span class="track-emoji">🎨</span>
+              <span class="track-tag">ARTS &amp; DESIGN</span>
+            </div>
+            <div class="track-body">
+              <h2>Arts and Design</h2>
+              <p>
+                For learners interested in visual arts,
+                performing arts, design, and creative work.
+              </p>
+              <div class="strand-list">
+                <span>Visual Arts</span>
+                <span>Performing Arts</span>
+                <span>Creative Design</span>
+              </div>
+              <button class="outline-btn"
+                data-details="arts">
+                View Details
+              </button>
+            </div>
+          </article>
+
+          <article class="track-card">
+            <div class="track-top sports">
+              <span class="track-emoji">🏅</span>
+              <span class="track-tag">SPORTS</span>
+            </div>
+            <div class="track-body">
+              <h2>Sports</h2>
+              <p>
+                For learners interested in sports, physical
+                education, fitness, and athletic development.
+              </p>
+              <div class="strand-list">
+                <span>Athletics</span>
+                <span>Fitness</span>
+                <span>Sports Development</span>
+              </div>
+              <button class="outline-btn"
+                data-details="sports">
+                View Details
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <div id="trackDetails" class="details-panel hidden">
+          <button id="closeDetails" class="close-btn"
+            aria-label="Close details">✕</button>
+          <h2 id="detailsTitle"></h2>
+          <p id="detailsText"></p>
+          <h3>Possible Career Directions</h3>
+          <p id="detailsCareers"></p>
+        </div>
+      </section>
+
+      <!-- Strand Assessment -->
+      <section class="page" id="assessment">
+        <div class="page-intro">
+          <span class="eyebrow">DISCOVER YOUR INTERESTS</span>
+          <h1>Strand Interest Assessment</h1>
+          <p>
+            Answer the questions based on what you enjoy.
+            Your result is only a guide, not an official
+            career or aptitude test.
+          </p>
+        </div>
+
+        <div class="assessment-layout">
+          <div class="assessment-card">
+            <div class="progress-info">
+              <span id="questionCounter">Question 1 of 5</span>
+              <span id="progressPercent">20%</span>
+            </div>
+
+            <div class="progress-track">
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <form id="assessmentForm">
+              <h2 id="questionText">
+                Which activity interests you the most?
+              </h2>
+
+              <div id="answerOptions" class="answer-options"></div>
+
+              <div class="assessment-actions">
+                <button type="button" id="prevQuestion"
+                  class="outline-btn" disabled>
+                  ← Previous
+                </button>
+
+                <button type="button" id="nextQuestion"
+                  class="primary-btn">
+                  Next →
+                </button>
+              </div>
+            </form>
+
+            <div id="assessmentResult" class="result-box hidden">
+              <div class="result-icon">🎯</div>
+              <h2>Your Interest Result</h2>
+              <h3 id="resultTitle"></h3>
+              <p id="resultDescription"></p>
+              <p class="result-note">
+                This result is a starting point for exploration.
+                Consider your grades, goals, school offerings,
+                and advice from your guidance counselor.
+              </p>
+              <button id="retakeBtn" class="primary-btn">
+                Retake Assessment
+              </button>
+            </div>
+          </div>
+
+          <aside class="assessment-tip">
+            <div class="tip-icon">💡</div>
+            <h3>Assessment Tips</h3>
+            <ul>
+              <li>Choose what genuinely interests you.</li>
+              <li>There are no right or wrong answers.</li>
+              <li>Think about activities you enjoy.</li>
+              <li>Use the result as a guide only.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Career Paths -->
+      <section class="page" id="careers">
+        <div class="page-intro">
+          <span class="eyebrow">LOOK AHEAD</span>
+          <h1>Explore Career Paths</h1>
+          <p>
+            Search for career examples and learn about
+            the skills they may require.
+          </p>
+        </div>
+
+        <div class="search-box">
+          <span>🔎</span>
+          <input type="search" id="careerSearch"
+            placeholder="Search careers or fields..."
+            aria-label="Search careers">
+        </div>
+
+        <div id="careerGrid" class="career-grid">
+
+          <article class="career-card" data-search="programmer ict technology">
+            <div class="career-icon">💻</div>
+            <span class="career-category">ICT / TECHNOLOGY</span>
+            <h3>Programmer</h3>
+            <p>Creates and maintains computer programs and software.</p>
+            <p class="career-skills"><strong>Skills:</strong> Logic, coding, problem-solving</p>
+          </article>
+
+          <article class="career-card" data-search="network technician ict computer">
+            <div class="career-icon">🌐</div>
+            <span class="career-category">ICT / TECHNOLOGY</span>
+            <h3>Network Technician</h3>
+            <p>Helps install, configure, and troubleshoot computer networks.</p>
+            <p class="career-skills"><strong>Skills:</strong> Networking, troubleshooting</p>
+          </article>
+
+          <article class="career-card" data-search="accountant abm business">
+            <div class="career-icon">📊</div>
+            <span class="career-category">BUSINESS / ABM</span>
+            <h3>Accountant</h3>
+            <p>Prepares and reviews financial records and reports.</p>
+            <p class="career-skills"><strong>Skills:</strong> Accuracy, analysis, organization</p>
+          </article>
+
+          <article class="career-card" data-search="entrepreneur abm business">
+            <div class="career-icon">🏢</div>
+            <span class="career-category">BUSINESS / ABM</span>
+            <h3>Entrepreneur</h3>
+            <p>Plans and manages a business or enterprise.</p>
+            <p class="career-skills"><strong>Skills:</strong> Planning, communication, creativity</p>
+          </article>
+
+          <article class="career-card" data-search="teacher humss education">
+            <div class="career-icon">📚</div>
+            <span class="career-category">EDUCATION / HUMSS</span>
+            <h3>Teacher</h3>
+            <p>Helps learners understand subjects and develop skills.</p>
+            <p class="career-skills"><strong>Skills:</strong> Communication, patience, organization</p>
+          </article>
+
+          <article class="career-card" data-search="journalist humss communication">
+            <div class="career-icon">📰</div>
+            <span class="career-category">MEDIA / HUMSS</span>
+            <h3>Journalist</h3>
+            <p>Researches, verifies, and reports news and information.</p>
+            <p class="career-skills"><strong>Skills:</strong> Writing, research, critical thinking</p>
+          </article>
+
+          <article class="career-card" data-search="engineer stem mathematics science">
+            <div class="career-icon">⚙️</div>
+            <span class="career-category">ENGINEERING / STEM</span>
+            <h3>Engineer</h3>
+            <p>Uses science and mathematics to design and solve technical problems.</p>
+            <p class="career-skills"><strong>Skills:</strong> Mathematics, analysis, design</p>
+          </article>
+
+          <article class="career-card" data-search="medical professional stem health">
+            <div class="career-icon">🩺</div>
+            <span class="career-category">HEALTH / STEM</span>
+            <h3>Healthcare Professional</h3>
+            <p>Provides healthcare services after completing the required training and qualifications.</p>
+            <p class="career-skills"><strong>Skills:</strong> Communication, attention to detail, teamwork</p>
+          </article>
+
+          <article class="career-card" data-search="electrician tvl electrical technical">
+            <div class="career-icon">🔌</div>
+            <span class="career-category">TECHNICAL / VOCATIONAL</span>
+            <h3>Electrician</h3>
+            <p>Installs, inspects, and maintains electrical systems with proper training.</p>
+            <p class="career-skills"><strong>Skills:</strong> Safety, technical knowledge, troubleshooting</p>
+          </article>
+
+          <article class="career-card" data-search="automotive mechanic tvl automotive">
+            <div class="career-icon">🚗</div>
+            <span class="career-category">TECHNICAL / VOCATIONAL</span>
+            <h3>Automotive Technician</h3>
+            <p>Inspects, maintains, and repairs vehicles.</p>
+            <p class="career-skills"><strong>Skills:</strong> Mechanical knowledge, diagnosis, safety</p>
+          </article>
+
+          <article class="career-card" data-search="graphic designer arts design creative">
+            <div class="career-icon">🎨</div>
+            <span class="career-category">ARTS / DESIGN</span>
+            <h3>Graphic Designer</h3>
+            <p>Creates visual materials for communication and promotion.</p>
+            <p class="career-skills"><strong>Skills:</strong> Creativity, layout, design software</p>
+          </article>
+
+          <article class="career-card" data-search="coach athlete sports fitness">
+            <div class="career-icon">🏃</div>
+            <span class="career-category">SPORTS / FITNESS</span>
+            <h3>Sports Coach</h3>
+            <p>Guides athletes in developing skills and improving performance.</p>
+            <p class="career-skills"><strong>Skills:</strong> Leadership, communication, planning</p>
+          </article>
+
+        </div>
+
+        <p id="noCareerResults" class="empty-state hidden">
+          No careers found. Try another search.
+        </p>
+      </section>
+
+      <!-- About -->
+      <section class="page" id="about">
+        <div class="page-intro">
+          <span class="eyebrow">ABOUT THIS PROJECT</span>
+          <h1>About SHS Career Guide</h1>
+          <p>
+            A web-based information guide designed to help
+            Grade 10 students explore Senior High School
+            educational pathways and possible careers.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">🎓</div>
+          <h2>Our Purpose</h2>
+          <p>
+            This website aims to make SHS track and career
+            information easier to explore. It provides
+            descriptions of learning pathways, an interest
+            assessment, and examples of possible careers.
+          </p>
+
+          <h2>Who Can Use This Website?</h2>
+          <p>
+            Grade 10 students who want to learn more about
+            their SHS options can use this guide as a starting
+            point when planning their next academic step.
+          </p>
+
+          <h2>Important Reminder</h2>
+          <p>
+            This website is an informational guide. It does
+            not replace official school enrollment information,
+            professional career counseling, or advice from
+            teachers and parents or guardians. Always verify
+            the programs offered by your preferred school.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>SHS Career Guide | Educational Information for Grade 10 Students</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
